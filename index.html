@@ -236,34 +236,35 @@
             Contact Us <span id="required">(*required)</span>
             
                 <div>
-                    <label>First Name<span>*</span></label>
-                    <input>
+                    <label for="fname">First Name<span>*</span></label>
+                    <input id="fname" name="fname" required>
+				              				
                 </div>
                 <div>
-                    <label>Last Name<span>*</span></label>
-                    <input>
+                    <label for="lname">Last Name<span>*</span></label>
+                    <input id="lname" name="lname" required>
                 </div>
                 <div>
-                    <label>Email<span>*</span></label>
-                    <input>
+                    <label for="email">Email<span>*</span></label>
+                    <input id="email" type="email" required>
                 </div>
                 <div>
-                    <label>Phone<span>*</span></label>
-                    <input>
+                    <label for="phone">Phone<span>*</span></label>
+                    <input id="phone" type="tel" required>
                 </div>
                 <fieldset id="preferred-contact">
                 <legend>Preferred Contact Method<span>*</span></legend>
-                    <div> 
-                        <input>
-                        <label>Email</label>
+                    <div>
+				<input type="email" id="email" name="email">
+				<label for="email">Email</label>				
+				</div>					
+                    <div>
+                        <input type="text" id="text" name="text">
+                        <label for ="text">Text</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Text</label>
-                    </div>
-                    <div>
-                        <input>
-                        <label>Phone</label>
+                        <input type="phone" id="phone" name="phone">
+                        <label for ="phone">Phone</label>
                     </div>
                 </fieldset>
                 <fieldset id="destination">
@@ -292,7 +293,7 @@
                         <option>Flexible</option>
                     </select>
                 </fieldset>
-                <input>            
+                <input id="submit" type="submit" value="Submit">            
         </section>
         <section id="legal">
             Legal
