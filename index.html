@@ -313,8 +313,8 @@
 </main>
 <footer>
         <section id="contact-us">
-            Contact Us <span id="required">(*required)</span>
-            
+            <h3>Contact Us <span id="required">(*required)</span></h3>
+            <form action="#" method="post">
                 <div>
                     <label for="fname">First Name<span>*</span></label>
                     <input id="fname" name="fname" required>
@@ -335,17 +335,19 @@
                 <fieldset id="preferred-contact">
                 <legend>Preferred Contact Method<span>*</span></legend>
                     <div>
-				<input type="email" id="email" name="email">
-				<label for="email">Email</label>				
-				</div>					
-                    <div>
-                        <input type="text" id="text" name="text">
-                        <label for ="text">Text</label>
-                    </div>
-                    <div>
-                        <input type="phone" id="phone" name="phone">
-                        <label for ="phone">Phone</label>
-                    </div>
+          <input type="radio" id="contact-email" name="preferred-contact" value="email" required>
+          <label for="contact-email">Email</label>
+        </div>
+
+        <div>
+          <input type="radio" id="contact-text" name="preferred-contact" value="text">
+          <label for="contact-text">Text</label>
+        </div>
+
+        <div>
+          <input type="radio" id="contact-phone" name="preferred-contact" value="phone">
+          <label for="contact-phone">Phone</label>
+        </div>
                 </fieldset>
                 <fieldset id="destination">
                     <legend>Destination<span>*</span></legend>
@@ -375,6 +377,7 @@
                 </fieldset>
                 <input id="submit" type="submit" value="Submit">            
         </section>
+		</form>
         <section id="legal">
             Legal
             <small>Copyright 2021 Wonderlust</small>
